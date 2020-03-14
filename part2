@@ -10,12 +10,12 @@ for i in range(len(a)):
     if len(a) == 1 and a[0] == b:
         d += 1
         print(d)
-        print("Время работы: " + str(time.time() - start))
+        print("Время работы:", ":{:.8f}".format(time.time() - start))
         break
 
     if len(a) == 1 and a[0] != b:
         print(None)
-        print("Время работы: " + str(time.time() - start))
+        print("Время работы:", ":{:.8f}".format(time.time() - start))
         break
 
     for j in a[0:len(a)//2]:
